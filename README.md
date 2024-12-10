@@ -47,6 +47,10 @@ Test your new function; I've provided some basic testing code in `code.test.js`.
 
 ChatGPT helped with simple randomization algorithm for route, checked other students implementations for help figuring out stop criteria (I was overthinking it)
 
+ChatGPT also helped me with the psuedo-code side of things as I was not initially sure exactly how to solve the problem the way it was asked, specifically the stop condition side of things and when things were supposed to be "randomized".
+
+All code was hand typed, with help debugging from ChatGPT
+
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
 
 ## Runtime Analysis
