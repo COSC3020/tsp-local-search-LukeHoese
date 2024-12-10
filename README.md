@@ -45,7 +45,7 @@ returns the length of the shortest tour (not the tour itself).
 
 Test your new function; I've provided some basic testing code in `code.test.js`.
 
-ChatGPT helped with simple randomization algorithm for route, checked other students implementations for help figuring out stop criteria (I was overthinking it)
+ChatGPT helped with simple randomization algorithm for route, checked other students implementations for help figuring out stop criteria (I was overthinking it). My initial thought was that if it was randomized, a stop condition would be chosen in the way I did, but it almost felt too simple so I went and checked the other repositories to see what other people had decided to do. CollinDavis03's was the implementation I came across that had chosen a stop condition in this manor, which I used as an indicator that I was on the right track. 
 
 ChatGPT also helped me with the psuedo-code side of things as I was not initially sure exactly how to solve the problem the way it was asked, specifically the stop condition side of things and when things were supposed to be "randomized".
 
