@@ -58,3 +58,5 @@ I certify that I have listed all sources used to complete this exercise, includi
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+The worst case asymptotic complexity for my implementation is $\Theta$(n<sup>3</sup>). We find this because the dominant part of the main code as far as time complexity is concerned is the nested for loops, where i and k each iterate an amount of times linear to the amount of cities, which multiplies out to $\Theta$(n<sup>2</sup>). Within the nested loop, we calculated the distance, which itself iterates over all cities in our route, a time linear to the amount of cities. Because this is in the inner loop we perform this $\Theta$(n) calculation $\Theta$(n<sup>2</sup>) times, multiplying out to our final time complexity of $\Theta$(n<sup>3</sup>).
