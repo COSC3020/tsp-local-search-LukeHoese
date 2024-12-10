@@ -45,8 +45,20 @@ returns the length of the shortest tour (not the tour itself).
 
 Test your new function; I've provided some basic testing code in `code.test.js`.
 
+ChatGPT helped with simple randomization algorithm for route, checked other students implementations for help figuring out stop criteria (I was overthinking it). My initial thought was that if it was randomized, a stop condition would be chosen in the way I did, but it almost felt too simple so I went and checked the other repositories to see what other people had decided to do. CollinDavis03's was the implementation I came across that had chosen a stop condition in this manor, which I used as an indicator that I was on the right track. 
+
+ChatGPT also helped me with the psuedo-code side of things as I was not initially sure exactly how to solve the problem the way it was asked, specifically the stop condition side of things and when things were supposed to be "randomized".
+
+All code was hand typed, with help debugging from ChatGPT
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
 ## Runtime Analysis
 
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+The worst case asymptotic complexity for my implementation is $\Theta$(n<sup>3</sup>). We find this because the dominant part of the main code as far as time complexity is concerned is the nested for loops, where i and k each iterate an amount of times linear to the amount of cities, which multiplies out to $\Theta$(n<sup>2</sup>). Within the nested loop, we calculated the distance, which itself iterates over all cities in our route, a time linear to the amount of cities. Because this is in the inner loop we perform this $\Theta$(n) calculation $\Theta$(n<sup>2</sup>) times, multiplying out to our final time complexity of $\Theta$(n<sup>3</sup>).
+
+The space complexity, or extra space required for the algorithm, is $\Theta$(n), because the only two non-constant data variables used are route and newRoute, which each have a max size linear to the number of cities.
